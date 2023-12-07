@@ -1,2 +1,7 @@
-# Notas_pipEntornosVirtuales
-Notas del curso Pip y Entornos Virtuales (Python)
+# Game Project
+
+Para correr el juego debes seguir las siguiente instrucciones en la terminal:
+```
+cd Game
+python main.py
+```

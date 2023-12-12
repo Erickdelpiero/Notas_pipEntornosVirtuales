@@ -1,11 +1,20 @@
 import matplotlib.pyplot as plt
+from matplotlib.ticker import FuncFormatter
 
-def barras(labels, values):
-  fig, ax= plt.subplots()
-  ax.bar(labels, values)
-  plt.show()
-  # plt.savefig('barras.png')
-  # plt.close()
+def millions_formatter(x, pos):
+    return '%1.1fM' % (x * 1e-6)
+
+def barras(labels, values, title='', ylabel=''):
+    fig, ax = plt.subplots()
+    ax.bar(labels, values)
+    ax.set_title(title)
+    ax.set_ylabel(ylabel)
+    
+    # Formateador para el eje Y en millones
+    formatter = FuncFormatter(millions_formatter)
+    ax.yaxis.set_major_formatter(formatter)
+    
+    plt.show()
 
 def torta(labels, values):
   fig, ax= plt.subplots()

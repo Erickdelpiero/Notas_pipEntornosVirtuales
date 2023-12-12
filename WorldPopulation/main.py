@@ -1,7 +1,7 @@
 # Erick Del Piero (https://github.com/Erickdelpiero)
 # 20/07/2023
 
-# Programa para visualizar gráficas estadíticas de la población mundial
+# Programa para visualizar gráficas estadísticas de la población mundial
 import PaisBarras
 import PaisTorta
 

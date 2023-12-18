@@ -15,6 +15,8 @@ def barras(labels, values, title='', ylabel=''):
     ax.yaxis.set_major_formatter(formatter)
     
     plt.show()
+    ##plt.savefig('pie.png')
+    ##plt.close()
 
 def torta(labels, values):
   fig, ax= plt.subplots()

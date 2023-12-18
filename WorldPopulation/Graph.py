@@ -14,17 +14,17 @@ def barras(labels, values, title='', ylabel=''):
     formatter = FuncFormatter(millions_formatter)
     ax.yaxis.set_major_formatter(formatter)
     
-    plt.show()
-    ##plt.savefig('pie.png')
-    ##plt.close()
+    # plt.show()
+    plt.savefig('pie.png')
+    plt.close()
 
 def torta(labels, values):
   fig, ax= plt.subplots()
   ax.pie(values, labels=labels)
   ax.axis=('equal')
-  plt.show()
-  # plt.savefig('torta.png')
-  # plt.close()
+  # plt.show()
+  plt.savefig('torta.png')
+  plt.close()
 
 if __name__=='__main__':
   labels=['2022', '2020', '2015', '2010']
